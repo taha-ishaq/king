@@ -11,7 +11,9 @@ app.post('/steal-data', (req, res) => {
     console.log('Data received:', req.body);
     res.sendStatus(200);
 });
-
+app.get('/',(req,res)=>{
+    res.send("We are alive")
+})
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
